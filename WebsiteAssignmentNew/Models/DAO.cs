@@ -252,7 +252,7 @@ namespace WebsiteAssignmentNew.Models
             return shopList;
         }
         public int AddTransaction(/*string transactionId,*/ DateTime date, decimal totalprice,
-            string UserName, int addressid)
+            string UserName)
         {
             int count = 0;
             SqlCommand cmd;
@@ -263,7 +263,7 @@ namespace WebsiteAssignmentNew.Models
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@dateordered", date);
             cmd.Parameters.AddWithValue("@cost", totalprice);
-            cmd.Parameters.AddWithValue("@addressid", addressid);
+            //cmd.Parameters.AddWithValue("@addressid", addressid);
             cmd.Parameters.AddWithValue("@Username", UserName);
 
             try

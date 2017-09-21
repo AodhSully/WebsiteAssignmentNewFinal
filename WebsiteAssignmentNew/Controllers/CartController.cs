@@ -25,7 +25,7 @@ namespace WebsiteAssignmentNew.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddBook(FormCollection form)
+        public ActionResult AddTrack(FormCollection form)
         {
 
             List<Track> list = dao.ShowAllTracks();
@@ -218,29 +218,7 @@ namespace WebsiteAssignmentNew.Controllers
 
         public ActionResult ShippingDetails()
         {
-            //int count = 0;
-            //if (selectedItems.Count > 0)
-            //{
-            //    foreach (ProductModel item in selectedItems)
-            //    {
-            //        totalPrice = totalPrice + item.TotalPrice;
-
-            //    }
-            //}
-
-            //dao.AddTransaction(/*Session.SessionID + count,*/ DateTime.Now, totalPrice, Session["UserName"].ToString());
-
-            //if (selectedItems.Count > 0)
-            //{
-            //    foreach (ProductModel item in selectedItems)
-            //    {
-
-            //        dao.AddTransactionItem(/*Session.SessionID + count,*/ item);
-            //    }
-            //}
-            //count++;
-            //Session.Clear();
-            ////Session.Abandon();
+    
             return View();
         }
 
@@ -261,10 +239,8 @@ namespace WebsiteAssignmentNew.Controllers
 
                 }
             }
-            string a = null;
-            string b = null;
-            int addressID = (dao.getAddressID(a,b));
-            dao.AddTransaction(/*Session.SessionID + count,*/ DateTime.Now, totalPrice, Session["UserName"].ToString(), addressID);
+       
+            dao.AddTransaction(/*Session.SessionID + count,*/ DateTime.Now, totalPrice, Session["UserName"].ToString());
 
             if (selectedItems.Count > 0)
             {
@@ -278,8 +254,14 @@ namespace WebsiteAssignmentNew.Controllers
             Session.Clear();
             //Session.Abandon();
 
-            return Content(count.ToString());
-            //return View();
+            //return Content(count.ToString());
+            return View("PaymentView");
+        }
+
+        public ActionResult PaymentView()
+        {
+
+            return View();
         }
 
     }

@@ -1,2 +1,11 @@
-﻿@Html.ActionLink("Register", "Index", "User", null, new { @class = "register" })
-@Html.ActionLink("Login /", "Login", "User", null, new { @class = "register" })
+﻿@if (Session["name"] != null)
+{
+    <span>Logged in as @Session["name"] </span>
+
+    @Html.ActionLink("Logout", "LogOut", "User", null, new { @class = "register" })
+}
+else
+{
+    @Html.ActionLink("Register", "Index", "User", null, new { @class = "register" })
+    @Html.ActionLink("Login /", "Login", "User", null, new { @class = "register" })
+}

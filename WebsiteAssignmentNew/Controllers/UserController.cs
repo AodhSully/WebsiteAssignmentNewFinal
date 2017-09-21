@@ -54,11 +54,20 @@ namespace WebsiteAssignmentNew.Controllers
             if (ModelState.IsValid)
             {
                 if (user.UserRole == Role.Staff &&
-                    user.Email == "staff@dbs.ie" &&
-                    user.Password == "dbsStaff")
+                    user.UserName == "ultan" &&
+                    user.Password == "ubadcat"
+                    ||
+                    user.UserRole == Role.Staff &&
+                    user.UserName == "aodh" &&
+                    user.Password == "abadcat"
+                    ||
+                    user.UserRole == Role.Staff &&
+                    user.UserName == "graham" &&
+                    user.Password == "gbadcat"
+                    )
                 {
                     Session["name"] = "Staff";
-                    return RedirectToAction("Index", "Staff");
+                    return RedirectToAction("ShowFeedback", "Contact"); //"Index", "ShowFeedback" "Contact Us", "Index", "Contact"
                 }
                 else if (user.UserRole == Role.Customer)
                 {
@@ -68,7 +77,6 @@ namespace WebsiteAssignmentNew.Controllers
                         //Session.Add("name",user.FirstName);
                         Session["name"] = user.FirstName;
                         Session["UserName"] = user.UserName;
-                        Session["email"] = user.Email;
                         return RedirectToAction("Index", "Home");
 
                     }

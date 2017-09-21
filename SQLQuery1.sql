@@ -1,0 +1,1 @@
+﻿insert into Record values('5', 'deleted', 'Roast Me', 10, 'deleted.jpg', '[deleted] - Roast Me.mp3')

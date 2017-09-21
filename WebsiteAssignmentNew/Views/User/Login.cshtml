@@ -1,0 +1,40 @@
+﻿@model WebsiteAssignmentNew.Models.UserModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2 id="pageTitle">Login</h2>
+
+<div class="col-md-4-push-2">
+    <img height="500" id="contactLogo" src="~/Content/Images/croppedLogo.png" />
+</div>
+
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "error" })
+    <div class="row">
+        <div class="col-md-4">
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(u => u.UserName)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(u => u.UserName)
+            </p>
+            <p>
+                @Html.LabelFor(u => u.Password)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.PasswordFor(u => u.Password)
+            </p>
+            <p>
+                @Html.LabelFor(u => u.UserRole)
+
+                @Html.EnumDropDownListFor(u => u.UserRole)
+            </p>
+            <p>
+                <input id="Submit1" type="submit" value="Submit" />
+                <input id="Reset1" type="reset" value="Clear" />
+            </p>
+        </div>
+    </div>
+}

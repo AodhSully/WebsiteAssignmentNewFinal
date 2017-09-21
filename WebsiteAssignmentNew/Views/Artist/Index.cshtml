@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebsiteAssignmentNew.Models.Artist>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 id="pageTitle">Artist</h2>
+
+
+    @foreach (var Artist in Model)
+    {
+        <div class="fade">
+            <div id="artistForEach">
+                <div id="artistBKColor">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="artistImg" width="500"  src="~/Content/ArtistImg/@Artist.ArtistImg" />
+                                <h4 id="artistName">@Html.ActionLink(@Artist.ArtistName, "Index", "Tracks")</h4>
+                            </div>
+                            <div class="col-md-6">
+
+                                <h4>Releases by this Artist</h4>
+                               
+
+                               
+                                    <p>@Artist.Title</p>
+                                 
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            }

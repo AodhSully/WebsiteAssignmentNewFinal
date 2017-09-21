@@ -1,0 +1,265 @@
+﻿#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding: 0;
+    font-family: 'Tw Cen MT';
+}
+
+body {
+   
+    background-image: url('Images/croppedLogoGreyLarge.png');
+    background-repeat: no-repeat;
+    background-size: 1250px auto;
+    background-position: 50%;
+    /*background-color: #d3d3d3;
+    background-repeat:repeat-y;*/
+    padding-bottom:126px;
+  
+}
+
+#eyes {
+    height: 120px;
+    max-width: 500px;
+    resize: horizontal;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+#logoText {
+    max-width: 500px;
+    padding-left: 30px;
+    height: 120px;
+    width: 600px;
+    
+    display: inline-block;
+}
+
+#headimg {
+    display: inline-block;
+}
+
+header {
+    height: auto;
+    min-height: 140px;
+    min-width: 580px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-image: url('MiscImg/textureRed.jpg');
+    background-color: red;
+}
+
+
+
+nav {
+    min-height: 25px;
+    height: auto;
+    /*background: linear-gradient(red, white);*/
+    background: linear-gradient( rgba(255,0,0,1), rgba(255,0,0,0));
+    padding-top: 0.5px;
+    padding-bottom: 40px;
+    color: black;
+    font-size: 25px;
+    padding-right: 100px;
+    padding-left: 50px;
+    min-width: 580px;
+}
+
+
+    nav ul {
+        list-style-type: none;
+        
+    }
+
+        nav ul li {
+            display: inline;
+            
+            margin-right: 10px;
+        }
+
+            nav ul li a:link {
+                text-decoration: none;
+            }
+
+            nav ul li a:visited {
+                color: black;
+            }
+
+    /*Styling for 2nd level navigation*/
+    nav li ul {
+        display: none;
+        position: absolute;
+        
+    }
+
+    nav li:hover ul {
+        display: block;
+    }
+
+    nav li:hover {
+        text-decoration: underline;
+    }
+
+main {
+    color: black;
+    /*border:1px solid black;*/
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 500px;
+    height: auto;
+}
+
+
+
+.error {
+    color: yellow;
+}
+
+#pageTitle{
+    text-align:center;
+}
+
+/**************************************************************HOME**********************************************************************/
+
+#carouselSlides{
+
+}
+#minilogue {
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+/*#homeVideo {
+    float: right;
+    display: inline-block;
+    padding-right:10px;
+}*/
+
+#paragraphHome{
+    max-width:50%;
+    padding-left:10px;
+}
+
+#reggie {
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#homeVideo2 {
+    padding-left:10px;
+}
+#homeTitle {
+    text-align: center;
+}
+#reggieText{
+    
+    max-width:50%;
+    padding-right:10px;
+}
+/************************************************TRACKS*******************************************************************/
+
+#img {
+    max-width: 100%;
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#player{
+    width:100%;
+    padding-bottom: 5px;
+    align-items:center;
+}
+
+.fade{
+    opacity:0;
+}
+
+#playerNew {
+    max-width: 360px;
+}
+
+
+/********************************************ARTIST**************************************************************************/
+#artistBKColor {
+    padding-top: 10px;
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#artistForEach {
+    padding-bottom:5px;
+}
+
+/***********************************************************SHOP*********************************************************/
+
+
+
+/*******************************************************CONTACT*********************************************************/
+
+#contactLogo{
+    padding-top:20px;
+    float:right;
+}
+
+/*******************11****************************REGISTER********************************************************************/
+.register {
+    float: right;
+    margin-right: 5px;
+}
+
+    .register:hover {
+        text-decoration: underline;
+    }
+
+    .register:link {
+        color: black;
+    }
+
+
+.right {
+    float: right;
+}
+
+
+
+/**********************************************FOOTER****************************************************************/
+footer {
+    color: black;
+    text-align: center;
+    height: auto;
+    max-height: 126px;
+    min-width: 580px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-image: url('MiscImg/textureRed.jpg');
+    background-color: red;
+    /*position:fixed;*/
+    position: absolute;
+
+    bottom: 0;
+
+    width: 80%;
+    /*background: linear-gradient( rgba(255,0,0,0), rgba(255,0,0,1));*/
+}
+#footLink{
+    color:black;
+}
+
+#footLogo{
+    padding-bottom:30px;
+}
+
+#footLogoL{
+    width:70px;
+    float:left        
+}
+#footLogoR {
+   
+    width: 70px;
+    float:right;
+}

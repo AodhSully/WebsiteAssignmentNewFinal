@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebsiteAssignmentNew.Models.ProductModel>
+@{
+    ViewBag.Title = "ViewCart";
+}
+@section Logged{
+    @if (Session["name"] == null)
+    {
+        Response.Redirect(Url.Action("Login", "User"));
+    }
+}
+
+<h2>Your Cart</h2>
+
+<div class="col-md-4-push-2">
+    <img height="500" id="contactLogo" src="~/Content/Images/croppedLogo.png" />
+</div>
+
+<table border="1" class="table-bordered">
+
+    <thead>
+        <tr align="center">
+            <th class="col-md-2">Item Code</th>
+            <!--<th>Title</th>-->
+            <th class="col-md-1">Quantity</th>
+            <th class="col-md-1">Price</th>
+            <th class="col-md-1">Change Order</th>
+        </tr>
+
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <thead class="table-bordered" align="center">
+            <tr>
+                <td>@item.ProductID</td>
+
+                <td>@item.Quantity</td>
+                <td>@item.TotalPrice</td>
+                <td>
+                    @using (Html.BeginForm("RemoveItem", "Cart", FormMethod.Post))
+                {
+                        <input type="text" name="id" value=@item.ProductID hidden />
+                        <input type="submit" value="Remove" />
+
+                    }
+                </td>
+
+            </tr>
+        </thead>
+    }
+</table>
+<table class="table-bordered">
+    <thead align="center">
+        <tr >Total Price: &euro; @ViewBag.TransactionPrice</tr>
+
+    </thead>
+</table>
+
+
+
+@using (Html.BeginForm("ClearAll", "Cart", FormMethod.Post))
+{
+    <p> <input type="submit" value="Clear All" /></p>
+
+}
+@using (Html.BeginForm("ShippingDetails", "Cart", FormMethod.Post))
+{
+    <p><input type="submit" value="Enter Shipping Details" /></p>
+
+}
+
+
+@* <table class="table table-inverse">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+*@
+

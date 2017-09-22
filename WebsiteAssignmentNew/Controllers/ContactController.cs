@@ -98,7 +98,6 @@ namespace WebsiteAssignmentNew.Controllers
                     contact.Email = row["email"].ToString();
                     contact.Phone = row["phone"].ToString();
                     contact.Address = row["address"].ToString();
-                    //contact.Artist = row["artist"];
                     contact.ArtistName = row["artistName"].ToString();
                     contact.Comments = row["comments"].ToString();
                     contactList.Add(contact);

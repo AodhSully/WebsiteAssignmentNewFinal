@@ -11,18 +11,7 @@ namespace WebsiteAssignmentNew.Controllers
     {
         // GET: Home
         public ActionResult Index()
-        {
-            //string pass1 = "blue";
-            //string pass2 = "green"; //to show failure
-
-            //string hashedValue = Crypto.HashPassword(pass1);
-
-            //if (Crypto.VerifyHashedPassword(hashedValue, pass2))
-            //{
-            //    ViewBag.Value = "Both Passwords Match";
-            //}
-            //else ViewBag.Value = "Error! Passwords do not match";
-
+        {            
             return View();
         }
     }

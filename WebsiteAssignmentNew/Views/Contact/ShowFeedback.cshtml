@@ -10,19 +10,22 @@
         Response.Redirect(Url.Action("Login", "User"));
     }
 }
-<h2>User Feedback</h2>
-@ViewBag.Message
-@foreach (ContactModel contact in Model)
-{
-    <p>
-        @contact.Name<br />
-        @contact.Email<br />
-        @contact.Address<br />
-        @contact.Phone<br />
-        @contact.Website<br />
-        @contact.Artist<br />
-        @contact.ArtistName<br />
-    </p>
-    <p>@contact.Comments</p>
-    <hr />
-}
+
+<div class="fade">
+    <h2>User Feedback</h2>
+    @ViewBag.Message
+    @foreach (ContactModel contact in Model)
+    {
+        <p>
+            @contact.Name<br />
+            @contact.Email<br />
+            @contact.Address<br />
+            @contact.Phone<br />
+            @contact.Website<br />
+            @contact.Artist<br />
+            @contact.ArtistName<br />
+        </p>
+        <p>@contact.Comments</p>
+        <hr />
+    }
+</div>

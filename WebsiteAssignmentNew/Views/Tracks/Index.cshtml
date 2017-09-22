@@ -19,7 +19,6 @@
                         <img id="img" class="card-img-top" src="~/Content/TrackImages/@Track.Artwork" alt="Track Image">
                         <div class="card-block">
                             <h4 class="card-title">@Track.Artist - @Track.Title</h4>
-                            @*<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*@
                         </div>
                         <div class="card-footer">
                              <input type="text" name="TrackCode" value=@Track.TrackCode hidden />
@@ -48,38 +47,6 @@
         }
     </div>
 
-@*@model IEnumerable<WebsiteAssignmentNew.Models.Track>
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2></h2>
-<div id="booksDiv">
-
-    @foreach (var Track in Model)
-    {
-        using (Html.BeginForm("AddBook", "Cart", FormMethod.Post))
-        {
-            <section style="float:right;">
-                <<img id="img" class="card-img-top" src="~/Content/TrackImages/@Track.Artwork" alt="Track Image" width="100" height="100" />
-
-           </section>
-
-
-            <section>
-                <h4>
-                    <input type="text" name="TrackCode" value=@Track.TrackCode hidden />
-                    @Track.Title<br />
-                    TrackCode: @Track.TrackCode
-                </h4>
-                <h4>Price: &euro;@Track.PriceVinyl</h4>
-                <h4>Quantity: @Html.DropDownList("quantity", new SelectList((List<int>)ViewBag.Quantity))</h4>
-                <input type="submit" value="Add to Cart" />
-                <hr />
-            </section>
-        }
-    }
-</div>*@
 
 
    

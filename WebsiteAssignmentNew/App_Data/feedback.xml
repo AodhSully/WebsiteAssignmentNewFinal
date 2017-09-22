@@ -1,13 +1,19 @@
-﻿<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="yes"?>
 <feedback>
   <user_comments>
-    <name></name>
-    <email></email>
-    <phone></phone>
-    <address></address>
-    <website></website>
-    <artist></artist>
-    <artistname></artistname>
-    <comments></comments>
+    <name />
+    <email />
+    <phone />
+    <address />
+    <website />
+    <artist />
+    <artistname />
+    <comments />
+  </user_comments>
+  <user_comments>
+    <name>bob</name>
+    <email>bob@bob.bob</email>
+    <artist>False</artist>
+    <comments>Bob wants to sign up!</comments>
   </user_comments>
 </feedback>

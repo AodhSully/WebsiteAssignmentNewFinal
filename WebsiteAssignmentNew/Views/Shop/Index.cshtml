@@ -4,38 +4,37 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="pageTitle">Shop</h2>
+<div class="fade">
+    <h2 id="pageTitle">Shop</h2>
 
-<div id="forloop">
-    @foreach (var Shop in Model)
-    {
-        using (Html.BeginForm("AddMerchandise", "Cart", FormMethod.Post))
+    <div id="forloop">
+        @foreach (var Shop in Model)
         {
-        <div class="fade">
-            <div id="cardDeck" class="card-deck">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img id="img" class="card-img-top" src="~/Content/Shop/@Shop.ItemImage" alt="Track Image">
-                        <div class="card-block">
-                            <h4 class="card-title">@Shop.Item</h4>
-                            @*<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*@
-                            
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted"> </small> 
-                            <input type="text" name="ItemCode" value=@Shop.ItemCode hidden />
-                            @*@Shop.Item<br />*@
-                            <h4>Quantity: @Html.DropDownList("quantity", new SelectList((List<int>)ViewBag.Quantity))</h4>
+            using (Html.BeginForm("AddMerchandise", "Cart", FormMethod.Post))
+            {
+                <div class="fade">
+                    <div id="cardDeck" class="card-deck">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img id="img" class="card-img-top" src="~/Content/Shop/@Shop.ItemImage" alt="Track Image">
+                                <div class="card-block">
+                                    <h4 class="card-title">@Shop.Item</h4>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"> </small>
+                                    <input type="text" name="ItemCode" value=@Shop.ItemCode hidden />
+                                    <h4>Quantity: @Html.DropDownList("quantity", new SelectList((List<int>)ViewBag.Quantity))</h4>
 
-                            @*<input type="submit" value="&euro;@Shop.Price " />*@
-                            <input type="submit" class="btn btn-block" data-toggle="tooltip" data-placement="top" value="Add to cart €@Shop.Price" />
-                            @*<button type="button">Price &euro;@Shop.Price</button>*@
+                                   
+                                    <input type="button" class="btn btn-block" data-toggle="tooltip" data-placement="top" value="Currently Out of Stock"   />
+                                 
+                                </div>
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-            </div>
-        </div>
+            }
         }
-    }
-</div>
+    </div>
 
+</div>

@@ -11,9 +11,7 @@ body {
     background-image: url('Images/croppedLogoGreyLarge.png');
     background-repeat: no-repeat;
     background-size: 1250px auto;
-    background-position: 50%;
-    /*background-color: #d3d3d3;
-    background-repeat:repeat-y;*/
+    background-position: 50%;  
     padding-bottom:126px;
   
 }
@@ -54,7 +52,6 @@ header {
 nav {
     min-height: 25px;
     height: auto;
-    /*background: linear-gradient(red, white);*/
     background: linear-gradient( rgba(255,0,0,1), rgba(255,0,0,0));
     padding-top: 0.5px;
     padding-bottom: 40px;
@@ -85,7 +82,7 @@ nav {
                 color: black;
             }
 
-    /*Styling for 2nd level navigation*/
+    
     nav li ul {
         display: none;
         position: absolute;
@@ -102,7 +99,6 @@ nav {
 
 main {
     color: black;
-    /*border:1px solid black;*/
     border-radius: 10px;
     padding: 10px;
     min-height: 500px;
@@ -121,21 +117,13 @@ main {
 
 /**************************************************************HOME**********************************************************************/
 
-#carouselSlides{
 
-}
 #minilogue {
     border: solid;
     border-color: #bdbdbd;
     border-width: 2px;
     border-radius: 10px;
 }
-
-/*#homeVideo {
-    float: right;
-    display: inline-block;
-    padding-right:10px;
-}*/
 
 #paragraphHome{
     max-width:50%;
@@ -148,17 +136,20 @@ main {
     border-width: 2px;
     border-radius: 10px;
 }
+
 #homeVideo2 {
     padding-left:10px;
 }
+
 #homeTitle {
     text-align: center;
 }
-#reggieText{
-    
+
+#reggieText{    
     max-width:50%;
     padding-right:10px;
 }
+
 /************************************************TRACKS*******************************************************************/
 
 #img {
@@ -168,6 +159,7 @@ main {
     border-width: 2px;
     border-radius: 10px;
 }
+
 #player{
     width:100%;
     padding-bottom: 5px;
@@ -191,6 +183,7 @@ main {
     border-width: 2px;
     border-radius: 10px;
 }
+
 #artistForEach {
     padding-bottom:5px;
 }
@@ -199,11 +192,15 @@ main {
 
 
 
-/*******************************************************CONTACT*********************************************************/
+/*************************************************************ABOUT*******************************************************/
+#aboutCat{
+    padding-right:10px;
+}
 
-#contactLogo{
-    padding-top:20px;
-    float:right;
+/*******************************************************CONTACT*********************************************************/
+#contactLogo {
+    padding-top: 20px;
+    float: right;
 }
 
 /*******************11****************************REGISTER********************************************************************/
@@ -238,14 +235,11 @@ footer {
     padding-bottom: 10px;
     background-image: url('MiscImg/textureRed.jpg');
     background-color: red;
-    /*position:fixed;*/
     position: absolute;
-
     bottom: 0;
-
     width: 80%;
-    /*background: linear-gradient( rgba(255,0,0,0), rgba(255,0,0,1));*/
 }
+
 #footLink{
     color:black;
 }
@@ -258,6 +252,7 @@ footer {
     width:70px;
     float:left        
 }
+
 #footLogoR {
    
     width: 70px;

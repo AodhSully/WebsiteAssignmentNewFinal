@@ -29,17 +29,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6">
-                            <!--<img id="logo" alt="badcattextlogo" src="~/Content/Images/croppedLogo.png" class="right" />-->
-
                             <img id="logoText" alt="badcatlogotext" src="~/Content/Images/textLogo.png" class="rounded float-left" />
                         </div>
                         <div class="col-md-6">
                             <img id="eyes" alt="eyesLogo" src="~/Content/Images/eyes2.png" class="rounded float-right" />
-                            <!--<h2><em>BadCat Records</em></h2>-->
                         </div>
-                        @*<div class="col-md-12">
-                            <img src="~/Content/MiscImg/textureRed.jpg" />
-                        </div>*@
                     </div>
                 </div>
             </div>
@@ -50,8 +44,6 @@
 
         <nav>
             <ul class="col-md-12">
-                @*<div class="col-md-8">*@
-
                     <li>
                         @Html.ActionLink("Home", "Index", "Home")
                     </li>
@@ -74,14 +66,11 @@
                     @Html.ActionLink("Cart", "ViewCart", "Cart")
                 </li>
 
-                @*</div>
-                <div class="col-md-4">*@
                     <li id="logIn">
-                        @*@{Html.RenderPartial("LoginRegister"); }*@
                         @RenderPage("LoginRegister.cshtml")
                         @RenderSection("Logged", false)
                     </li>
-                @*</div>*@
+               
     </ul>
 
     </nav>

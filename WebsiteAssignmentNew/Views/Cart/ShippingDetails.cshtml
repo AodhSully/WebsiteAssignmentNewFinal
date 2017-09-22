@@ -4,43 +4,45 @@
     ViewBag.Title = "ShippingView";
 }
 
-<h2>ShippingView</h2>
-@using (Html.BeginForm("AddShippingDetails", "Cart", FormMethod.Post))
-{
-    Html.ValidationSummary(false, "", new { @class = "error" });
-<p>
-    @Html.LabelFor(s => s.Address1)
-    @Html.TextBoxFor(s => s.Address1)
-</p>
-<p>
-    @Html.LabelFor(s => s.Address2)
-    @Html.TextBoxFor(s => s.Address2)
-</p>
-<p>
-    @Html.LabelFor(s => s.Address3)
-    @Html.TextBoxFor(s => s.Address3)
-</p>
-<p>
-    @Html.LabelFor(s => s.City)
-    @Html.TextBoxFor(s => s.City)
-</p>
-<p>
-    @Html.LabelFor(s => s.Country)
-    @Html.TextBoxFor(s => s.Country)
-</p>
-<p>
-    @Html.LabelFor(s => s.PostCode)
-    @Html.TextBoxFor(s => s.PostCode)
-</p>
 
-<p>
-    <input id="Submit1" type="submit" value="Submit order" />
-    <input id="Reset1" type="reset" value="Clear" />
+<div class="fade">
+    <h2>ShippingView</h2>
+    @using (Html.BeginForm("AddShippingDetails", "Cart", FormMethod.Post))
+    {
+        Html.ValidationSummary(false, "", new { @class = "error" });
+        <p>
+            @Html.LabelFor(s => s.Address1)
+            @Html.TextBoxFor(s => s.Address1)
+        </p>
+        <p>
+            @Html.LabelFor(s => s.Address2)
+            @Html.TextBoxFor(s => s.Address2)
+        </p>
+        <p>
+            @Html.LabelFor(s => s.Address3)
+            @Html.TextBoxFor(s => s.Address3)
+        </p>
+        <p>
+            @Html.LabelFor(s => s.City)
+            @Html.TextBoxFor(s => s.City)
+        </p>
+        <p>
+            @Html.LabelFor(s => s.Country)
+            @Html.TextBoxFor(s => s.Country)
+        </p>
+        <p>
+            @Html.LabelFor(s => s.PostCode)
+            @Html.TextBoxFor(s => s.PostCode)
+        </p>
+
+        <p>
+            <input id="Submit1" type="submit" value="Submit order" />
+            <input id="Reset1" type="reset" value="Clear" />
+
+        </p>
     
-</p>
 
-
-}
+    }
 @*@using (Html.BeginForm("PaymentView", "Cart", FormMethod.Post))
 {
     <input id="Submit1" type="submit" value="Go to payment" />

@@ -14,6 +14,9 @@ namespace WebsiteAssignmentNew.Controllers
         public ActionResult Index()
         {
             List<Track> tracklist = dao.ShowAllTracks();
+
+
+            ///track items were initially hard coded in here
             //List<Track> tracklist = new List<Track>()
             //{
             //      new Track{ Artist="[deleted]", Title="Roast Me", TrackCode="BC005", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="deleted.jpg", TrackAudio="[deleted] - Roast Me.mp3"},

@@ -124,7 +124,7 @@
     <Content Include="Content\ArtistImg\QR.jpg" />
     <Content Include="Content\ArtistImg\Quiche.jpg" />
     <Content Include="Content\ArtistImg\[deleted].jpg" />
-    <Content Include="Content\Audio\BattleGround - Don%27t Fear Me.mp3" />
+    <Content Include="Content\Audio\BattleGround - Dont Fear Me.mp3" />
     <Content Include="Content\Audio\Box Heads - Enter the Disco.mp3" />
     <Content Include="Content\Audio\Bust - Neckline.mp3" />
     <Content Include="Content\Audio\Charles Duke - Lunar Immolation.mp3" />
@@ -140,7 +140,7 @@
     <Content Include="Content\Audio\Infinity Mirror - Lone Egret.mp3" />
     <Content Include="Content\Audio\Jane Doe - Freedom.mp3" />
     <Content Include="Content\Audio\Jeb - Jeb.mp3" />
-    <Content Include="Content\Audio\Kobogo - A Bug%27s Life.MP3" />
+    <Content Include="Content\Audio\Kobogo - A Bugs Life.MP3" />
     <Content Include="Content\Audio\Kobogo - Never Blend In.mp3" />
     <Content Include="Content\Audio\Legacy Systems - Hell On Earth.mp3" />
     <Content Include="Content\Audio\Legacy Systems - How Do I Delete This.mp3" />
@@ -148,7 +148,7 @@
     <Content Include="Content\Audio\Legacy Systems - These Men Are Not Friends.mp3" />
     <Content Include="Content\Audio\Life Arctic - Noise.mp3" />
     <Content Include="Content\Audio\Lo-Fi Sunrise - Video.mp3" />
-    <Content Include="Content\Audio\Nebula - I Don%27t Care.mp3" />
+    <Content Include="Content\Audio\Nebula - I Dont Care.mp3" />
     <Content Include="Content\Audio\Nebula - Nebula.mp3" />
     <Content Include="Content\Audio\Night Terrors - Down.mp3" />
     <Content Include="Content\Audio\Nostromo - Arrival.mp3" />

@@ -150,7 +150,6 @@ namespace WebsiteAssignmentNew.Controllers
 
                 totalPriceTrack = totalPriceTrack + track.Quantity * track.PriceVinyl;
                 item.ProductID = track.TrackCode;
-                //item.Title = track.Title;
                 item.Quantity = track.Quantity;
                 item.Price = track.PriceVinyl;
                 item.TotalPrice = totalPriceTrack;
@@ -167,7 +166,6 @@ namespace WebsiteAssignmentNew.Controllers
 
                 totalPriceMerc = totalPriceMerc + merc.Quantity * merc.Price;
                 item.ProductID = merc.ItemCode;
-                //item.Title = track.Title;
                 item.Quantity = merc.Quantity;
                 item.Price = merc.Price;
                 item.TotalPrice = totalPriceMerc;
@@ -181,40 +179,11 @@ namespace WebsiteAssignmentNew.Controllers
                 totalPrice = totalPrice + item.TotalPrice;
             }
             ViewBag.TransactionPrice = totalPrice;
-            //To remove from the selected books to avoid adding them in selected items again and again
             selectedTracks.Clear();
-            //selectedCourses.Clear();
             return View(selectedItems);
         }
 
-        //public ActionResult CheckOut()
-        //{
-        //    int count = 0;
-        //    if (selectedItems.Count > 0)
-        //    {
-        //        foreach (ProductModel item in selectedItems)
-        //        {
-        //            totalPrice = totalPrice + item.TotalPrice;
-
-        //        }
-        //    }
-
-        //    dao.AddTransaction(/*Session.SessionID + count,*/ DateTime.Now, totalPrice, Session["UserName"].ToString());
-
-        //    if (selectedItems.Count > 0)
-        //    {
-        //        foreach (ProductModel item in selectedItems)
-        //        {
-
-        //            dao.AddTransactionItem(/*Session.SessionID + count,*/ item);
-        //        }
-        //    }
-        //    count++;
-        //    Session.Clear();
-        //    //Session.Abandon();
-
-        //    return View();
-        //}
+       
 
         public ActionResult ShippingDetails()
         {
@@ -222,10 +191,7 @@ namespace WebsiteAssignmentNew.Controllers
             return View();
         }
 
-        //public ActionResult ShippingDetails()
-        //{
-        //    return View();
-        //}
+        
         public ActionResult AddShippingDetails(ShippingModel shipping)
         {
 

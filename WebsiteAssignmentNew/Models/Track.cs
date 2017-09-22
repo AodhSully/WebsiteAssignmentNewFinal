@@ -18,17 +18,5 @@ namespace WebsiteAssignmentNew.Models
         public string TrackAudio { get; set; }       
     }
 
-    //public class FindTracks
-    //{
-    //    List<Track> artistTrack = new List<Track>();
-
-    //    string duplicates = art 
-            
-    //        //artistTrack.GroupBy(x => x)
-    //        //.Where(x => x.Count() > 1)
-    //        //.Select(x => x.Key)
-    //        //.ToList();
-
-    //    public string Duplicates { get => duplicates; set => duplicates = value; }
-    //}
+  
 }

@@ -14,59 +14,63 @@
 
 </script>
 
-
-<h2 id="pageTitle">About</h2>
-
-<main>
-
-    <h2>Click on the heading below to see more about us</h2>
-    <div id="accordion">
-        <h4 class="question">Who are we?</h4>
-        <p class="answer">
-            BadCat Records are Aodh O'Sullivan, Graham Ó Laoi &amp; Ultan Gannon.
-        </p>
-
-        <h4 class="question">Where are we located?</h4>
-        <p class="answer">
-
-            BadCat Records is Located in Dublin Ireland.
-            Full directions to the BadCatCave can be found on our
-            @Html.ActionLink("Contact Us", "Index", "Contact")
-            page.
-        </p>
-
-        <h4 class="question">What type of artists does BadCat Records publish?</h4>
-        <p class="answer">
-            BadCat Records specialises in electronic artists and DJs.
-            More information on BadCat's artists can be found on our
-            @Html.ActionLink("Artist", "Index", "Artist") &amp;
-            @Html.ActionLink("Tracks", "Index", "Tracks")
-            pages.
-        </p>
-
-        <h4 class="question">Where can I buy your vinyl?</h4>
-        <p class="answer">
-            You can buy BadCat records from our
-            @Html.ActionLink("Shop", "Index", "Shop")
-            page.
-        </p>
-
-
-
-        <h4 class="question">How do I get in contact?</h4>
-        <p class="answer">
-            You can contact BadCat records from our
-            @Html.ActionLink("Contact Us", "Index", "Contact")
-            page.
-        </p>
-
+<div class="fade">
+    <h2 id="pageTitle">About</h2>
+    <div id="aboutCat" class="col-md-4-push-2">
+        <img height="300" id="contactLogo" src="~/Content/Images/croppedLogo.png" />
     </div>
 
+    <main>
+        <div class="col-md-pull-8">
+            <h2>Click on the headings below to see more</h2>
+            <div id="accordion">
+                <h4 class="question">Who are we?</h4>
+                <p class="answer">
+                    BadCat Records are Aodh O'Sullivan, Graham Ó Laoi &amp; Ultan Gannon.
+                </p>
 
-    <div id="google-maps">
-        <h3>We are located here</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19091.158569521744!2d-6.2334757762430915!3d53.264545117550604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867090b5444013d%3A0x2600c7a819bb0531!2sSandyford%2C+Dublin!5e0!3m2!1sen!2sie!4v1505147061690"
-                width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+                <h4 class="question">Where are we located?</h4>
+                <p class="answer">
 
-</main>
+                    BadCat Records is Located in Dublin Ireland.
+                    Full directions to the BadCatCave can be found on our
+                    @Html.ActionLink("Contact Us", "Index", "Contact")
+                    page.
+                </p>
+
+                <h4 class="question">What type of artists does BadCat Records publish?</h4>
+                <p class="answer">
+                    BadCat Records specialises in electronic artists and DJs.
+                    More information on BadCat's artists can be found on our
+                    @Html.ActionLink("Artist", "Index", "Artist") &amp;
+                    @Html.ActionLink("Tracks", "Index", "Tracks")
+                    pages.
+                </p>
+
+                <h4 class="question">Where can I buy your vinyl?</h4>
+                <p class="answer">
+                    You can buy BadCat records from our
+                    @Html.ActionLink("Shop", "Index", "Shop")
+                    page.
+                </p>
+
+
+
+                <h4 class="question">How do I get in contact?</h4>
+                <p class="answer">
+                    You can contact BadCat records from our
+                    @Html.ActionLink("Contact Us", "Index", "Contact")
+                    page.
+                </p>
+
+            </div>
+        </div>
+
+        <div id="google-maps">
+            <h3>We are located here</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19091.158569521744!2d-6.2334757762430915!3d53.264545117550604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867090b5444013d%3A0x2600c7a819bb0531!2sSandyford%2C+Dublin!5e0!3m2!1sen!2sie!4v1505147061690"
+                    width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+    </main>
+</div>

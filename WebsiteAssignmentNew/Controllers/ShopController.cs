@@ -17,6 +17,8 @@ namespace WebsiteAssignmentNew.Controllers
              List<Shop> shoplist = dao.ShowAllMerchandise();
         //    List<Shop> shoplist = new List<Shop>()
         //    {
+
+            ///shop items initially hardcoded in here
         //        new Shop{Item="Eyes Hat", Description="hat 1", ItemCode="BC1001", Price=5.99m, ItemImage="hat1.png"},
         //        new Shop{Item="Logo Hat", Description="hat 2", ItemCode="BC1001", Price=5.99m, ItemImage="hat2.png"},
         //        new Shop{Item="Logo Text Hat", Description="hat 3", ItemCode="BC1001", Price=5.99m, ItemImage="hat3.png"},

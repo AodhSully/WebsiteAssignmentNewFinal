@@ -10,30 +10,42 @@
     @using (Html.BeginForm("AddShippingDetails", "Cart", FormMethod.Post))
     {
         Html.ValidationSummary(false, "", new { @class = "error" });
-        <p>
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(s => s.Address1)
-            @Html.TextBoxFor(s => s.Address1)
         </p>
-        <p>
-            @Html.LabelFor(s => s.Address2)
-            @Html.TextBoxFor(s => s.Address2)
-        </p>
-        <p>
-            @Html.LabelFor(s => s.Address3)
-            @Html.TextBoxFor(s => s.Address3)
-        </p>
-        <p>
-            @Html.LabelFor(s => s.City)
-            @Html.TextBoxFor(s => s.City)
-        </p>
-        <p>
-            @Html.LabelFor(s => s.Country)
-            @Html.TextBoxFor(s => s.Country)
-        </p>
-        <p>
-            @Html.LabelFor(s => s.PostCode)
-            @Html.TextBoxFor(s => s.PostCode)
-        </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.Address1)
+            </p>
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(s => s.Address2)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.Address2)
+            </p>
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(s => s.Address3)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.Address3)
+            </p>
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(s => s.City)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.City)
+            </p>
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(s => s.Country)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.Country)
+            </p>
+            <p class="col-md-2-pull-2 col-form-label">
+                @Html.LabelFor(s => s.PostCode)
+            </p>
+            <p class="col-md-push-2 col-form-label">
+                @Html.TextBoxFor(s => s.PostCode)
+            </p>
 
         <p>
             <input id="Submit1" type="submit" value="Submit order" />
